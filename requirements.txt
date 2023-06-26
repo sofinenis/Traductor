@@ -8,3 +8,4 @@ PyYAML >=3.10
 tornado >=5.1
 xyzservices >=2021.09.1
 bokeh >= 3.0
+streamlit-bokeh-events
