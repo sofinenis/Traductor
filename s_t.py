@@ -9,7 +9,7 @@ tts_button = Button(label="Decirlo", width=100)
 tts_button.js_on_event("button_click", CustomJS(code=f"""
     var u = new SpeechSynthesisUtterance();
     u.text = "{text}";
-    u.lang = 'en-US';   #en-US
+    u.lang = 'en-US';   
 
     speechSynthesis.speak(u);
     """))
