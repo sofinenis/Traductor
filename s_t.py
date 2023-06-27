@@ -15,7 +15,3 @@ tts_button.js_on_event("button_click", CustomJS(code=f"""
     """))
 
 st.bokeh_chart(tts_button)
-
-if result:
-    if "GET_TEXT" in result:
-        st.write(result.get("GET_TEXT"))
