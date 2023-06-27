@@ -3,7 +3,7 @@ from bokeh.models.widgets import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
 
-st.write("Interfaces Multimodales Audio y Texto")
+st.title("Interfaces Multimodales Audio y Texto")
 
 st.write("Interfaz de Audio a texto")
 text = st.text_input("Que decir?")
