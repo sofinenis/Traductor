@@ -3,6 +3,9 @@ from bokeh.models.widgets import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
 
+st.write("Interfaces Multimodales Audio y Texto")
+
+st.write("Interfaz de Audio a texto")
 text = st.text_input("Que decir?")
 
 tts_button = Button(label="Decirlo", width=100)
@@ -17,8 +20,8 @@ tts_button.js_on_event("button_click", CustomJS(code=f"""
 
 st.bokeh_chart(tts_button)
 
-
-stt_button = Button(label="Speak", width=100)
+st.write("Interfaz de Audio a texto")
+stt_button = Button(label="Habla", width=100)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
