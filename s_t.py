@@ -54,3 +54,9 @@ if result:
     if "GET_TEXT" in result:
         st.write(result.get("GET_TEXT"))
 
+        var u = new SpeechSynthesisUtterance();
+        u.text = "{result.get("GET_TEXT")}";
+        u.lang = 'es-es';   
+
+       speechSynthesis.speak(u);
+
