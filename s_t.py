@@ -53,10 +53,11 @@ result = streamlit_bokeh_events(
 if result:
     if "GET_TEXT" in result:
         st.write(result.get("GET_TEXT"))
+        
         tts_button2 = Button(label="Decirlo", width=100)
         tts_button2.js_on_event("button_click", CustomJS(code=f"""
         var v = new SpeechSynthesisUtterance();
-        v.text = (result.get("GET_TEXT");
+        v.text = result.get("GET_TEXT");
         v.lang = 'es-es';   
 
         speechSynthesis.speak(v);
