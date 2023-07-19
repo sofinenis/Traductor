@@ -4,6 +4,7 @@ python-dotenv==1.0
 faiss-cpu==1.7.4
 openai
 tiktoken
+apikey
 
 Jinja2 >=2.9
 contourpy >=1
