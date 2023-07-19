@@ -62,7 +62,7 @@ if result:
            os.environ["OPENAI_API_KEY"] = "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"
            prompt = 'Traduce al inglés : ' + result.get("GET_TEXT")
            response = openai.Completion.create(
-           engine=“text-davinci-002”,
+           engine='text-davinci-002',
            prompt=prompt,
            temperature=0.2,
            max_tokens=50,
