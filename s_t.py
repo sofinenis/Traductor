@@ -13,7 +13,7 @@ import openai
 st.title("Interfaces Multimodales Audio y Texto")
 
 st.write("Interfaz de Audio a texto")
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 text = st.text_input("Que decir?")
 
