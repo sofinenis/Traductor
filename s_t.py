@@ -96,33 +96,33 @@ if result:
     english_accent = st.selectbox(
         "Selecciona el acento",
         (
-            "Default",
-            "Spanish",
-            "United Kingdom",
-            "United States",
+            "Defecto",
+            "Español",
+            "Reino Unido",
+            "Estados Unidos",
             "Canada",
             "Australia",
-            "Ireland",
-            "South Africa",
+            "Irlanda",
+            "Sudáfrica",
         ),
     )
     
-    if english_accent == "Default":
+    if english_accent == "Defecto":
         tld = "com"
-    elif english_accent == "Spanish":
+    elif english_accent == "Español":
         tld = "com.mx"
     
-    elif english_accent == "United Kingdom":
+    elif english_accent == "Reino Unido":
         tld = "co.uk"
-    elif english_accent == "United States":
+    elif english_accent == "Estados Unidos":
         tld = "com"
     elif english_accent == "Canada":
         tld = "ca"
     elif english_accent == "Australia":
         tld = "com.au"
-    elif english_accent == "Ireland":
+    elif english_accent == "Irlanda":
         tld = "ie"
-    elif english_accent == "South Africa":
+    elif english_accent == "Sudáfrica":
         tld = "co.za"
     
     
