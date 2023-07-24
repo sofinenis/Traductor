@@ -55,49 +55,49 @@ if result:
         os.mkdir("temp")
     except:
         pass
-    st.title("Text to speech")
+    st.title("Texto a Audio")
     translator = Translator()
     
     text = str(result.get("GET_TEXT"))
     in_lang = st.selectbox(
-        "Select your input language",
-        ("English", "Spanish", "Bengali", "korean", "Chinese", "Japanese"),
+        "Selecciona el lenguaje de Entrada",
+        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
     )
-    if in_lang == "English":
+    if in_lang == "Inglés":
         input_language = "en"
-    elif in_lang == "Spanish":
+    elif in_lang == "Español":
         input_language = "es"
     elif in_lang == "Bengali":
         input_language = "bn"
-    elif in_lang == "korean":
+    elif in_lang == "Coreano":
         input_language = "ko"
-    elif in_lang == "Chinese":
+    elif in_lang == "Mandarín":
         input_language = "zh-cn"
-    elif in_lang == "Japanese":
+    elif in_lang == "Japonés":
         input_language = "ja"
     
     out_lang = st.selectbox(
-        "Select your output language",
-        ("English", "Spanish", "Bengali", "korean", "Chinese", "Japanese"),
+        "Selecciona el lenguaje de salida",
+        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
     )
-    if out_lang == "English":
+    if out_lang == "Inglés":
         output_language = "en"
-    elif out_lang == "Spanish":
+    elif out_lang == "Español":
         output_language = "es"
     elif out_lang == "Bengali":
         output_language = "bn"
-    elif out_lang == "korean":
+    elif out_lang == "Coreano":
         output_language = "ko"
-    elif out_lang == "Chinese":
+    elif out_lang == "Mandarín":
         output_language = "zh-cn"
-    elif out_lang == "Japanese":
+    elif out_lang == "Japonés":
         output_language = "ja"
     
     english_accent = st.selectbox(
-        "Select your english accent",
+        "Selecciona el acento",
         (
             "Default",
-            "India",
+            "Spanish",
             "United Kingdom",
             "United States",
             "Canada",
@@ -109,8 +109,8 @@ if result:
     
     if english_accent == "Default":
         tld = "com"
-    elif english_accent == "India":
-        tld = "co.in"
+    elif english_accent == "Spanish":
+        tld = "com.mx"
     
     elif english_accent == "United Kingdom":
         tld = "co.uk"
