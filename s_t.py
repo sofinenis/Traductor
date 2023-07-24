@@ -58,7 +58,7 @@ except:
 st.title("Text to speech")
 translator = Translator()
 
-text = result.get("GET_TEXT")
+text = str(result.get("GET_TEXT"))
 in_lang = st.selectbox(
     "Select your input language",
     ("English", "Spanish", "Bengali", "korean", "Chinese", "Japanese"),
