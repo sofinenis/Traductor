@@ -3,7 +3,7 @@ import streamlit as st
 from bokeh.models.widgets import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events
-
+from PIL import Image
 import time
 import glob
 
@@ -16,6 +16,10 @@ from googletrans import Translator
 st.title("Interfaces Multimodales")
 st.subheader("TRADUCTOR")
 
+
+image = Image.open('traductor.jpg')
+
+st.image(image)
 
 
 st.write("Interfaz de Audio a texto y Audio")
