@@ -22,9 +22,9 @@ image = Image.open('traductor.jpg')
 st.image(image)
 
 
-st.write("Interfaz de Audio a texto y Audio")
+st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label="Habla", width=100)
+stt_button = Button(label="Escuchar", width=200)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
