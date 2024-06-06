@@ -21,7 +21,8 @@ image = Image.open('OIG7.jpg')
 
 st.image(image,width=400)
 with st.sidebar:
-    st.subheader("Presiona el botón cuando escuches la señal "
+    st.subheader("Traductor.")
+    st.write("Presiona el botón cuando escuches la señal "
                  "habla lo que quieres traducir, luego selecciona"   
                  "la configuración de lenguaje que necesites.")
 
