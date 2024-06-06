@@ -19,7 +19,7 @@ st.subheader("TRADUCTOR")
 
 image = Image.open('OIG7.jpg')
 
-st.image(image,width=400)
+st.image(image,width=300)
 with st.sidebar:
     st.subheader("Traductor.")
     st.write("Presiona el botón cuando escuches la señal "
