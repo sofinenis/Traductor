@@ -24,12 +24,12 @@ with st.sidebar:
     st.subheader("Traductor.")
     st.write("Presiona el botón, cuando escuches la señal "
                  "habla lo que quieres traducir, luego selecciona"   
-                 "la configuración de lenguaje que necesites.")
+                 " la configuración de lenguaje que necesites.")
 
 
 st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label=" Inicio ", width=200)
+stt_button = Button(label=" Escuchar ", width=200)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
