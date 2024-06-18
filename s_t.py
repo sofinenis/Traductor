@@ -29,7 +29,7 @@ with st.sidebar:
 
 st.write("Toca el Botón y habla lo que quires traducir")
 
-stt_button = Button(label=" Escuchar 	🎙️ ", width=100)
+stt_button = Button(label=" Escuchar 	🎙️ ", width=250)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
