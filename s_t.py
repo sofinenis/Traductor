@@ -16,7 +16,7 @@ from googletrans import Translator
 
 
 st.title("TRADUCTOR.")
-st.subheader("Escucho lo que quieres traducir.")
+st.subheader("Dime algo que no sepa hermana")
 
 
 image = Image.open('OIG7.jpg')
